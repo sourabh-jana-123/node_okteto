@@ -16,7 +16,8 @@ services:
       - 4000:4000
     environment:
       PORT: 4000
-      MONGODB_URI: mongodb://mongo-db:27017/todos
+      MONGODB_URI: mongodb://mongo-db:27017
+      DB_NAME: todos
       NAME: app_user
     depends_on:
       - mongo-db
